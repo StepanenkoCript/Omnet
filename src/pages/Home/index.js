@@ -1,4 +1,7 @@
 import React from 'react';
+import { AppContext } from '../../context/AppContext';
+import { useNavigate } from 'react-router-dom';
+
 import {
   Container,
   Content,
@@ -14,9 +17,6 @@ import {
   FormButton,
   Error,
 } from './styles';
-
-import { AppContext } from '../../context/AppContext';
-import { useNavigate } from 'react-router-dom';
 
 export const Home = () => {
   const { cep, setCep, setAddress } = React.useContext(AppContext);
@@ -60,6 +60,8 @@ export const Home = () => {
   function handleBlur({ target }) {
     validateCep(target.value);
   }
+
+  console.log(cep);
 
   return (
     <Container>
