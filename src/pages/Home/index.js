@@ -66,7 +66,7 @@ export const Home = () => {
       <Content>
         <HeroContainer>
           <HeroImage />
-          <HeroTitle>Um lugar onde velocidade é lei</HeroTitle>
+          <HeroTitle>Um lugar onde velocidade é lei.</HeroTitle>
           <HeroDescription>
             Acelere na velocidade banda larga com a fibra da Omnet.
           </HeroDescription>
