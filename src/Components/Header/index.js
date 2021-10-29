@@ -7,11 +7,11 @@ export const Header = () => {
       <Content>
         <Logo src={logo} />
         <NavLinks>
-          <Link>Sobre</Link>
-          <Link>Home</Link>
-          <Link>Produtos</Link>
-          <Link>Perguntas frequentes</Link>
-          <Link>Contato</Link>
+          <Link to={{ pathname: '' }}>Sobre</Link>
+          <Link to={{ pathname: '/' }}>Home</Link>
+          <Link to={{ pathname: '' }}>Produtos</Link>
+          <Link to={{ pathname: '' }}>Perguntas frequentes</Link>
+          <Link to={{ pathname: '' }}>Contato</Link>
         </NavLinks>
       </Content>
     </Container>

@@ -1,3 +1,4 @@
+import { Link as Linkk } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Container = styled.header`
@@ -30,7 +31,7 @@ export const NavLinks = styled.div`
   gap: 20px;
 `;
 
-export const Link = styled.a`
+export const Link = styled(Linkk)`
   font-family: 'Roboto', sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana,
     sans-serif;
   font-size: 1.3rem;
@@ -38,6 +39,7 @@ export const Link = styled.a`
   color: #232429;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
+  text-decoration: none;
 
   &:hover {
     color: #eb4604;
